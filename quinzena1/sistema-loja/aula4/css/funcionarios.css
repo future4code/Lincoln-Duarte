@@ -1,0 +1,44 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top
+{
+    background: black;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+li, h2
+{
+    margin: 10px 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body
+{
+    background-color: rgb(200, 0, 0);
+}
