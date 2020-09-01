@@ -26,8 +26,10 @@ button:focus {
     color: white;
 }
 
-img {
+.container-do-search img {
     width: 15px;
+    opacity: 0.2;
+
 }
 
 div>p:first-child {
@@ -76,7 +78,7 @@ div table img{
 }
 
 #container-de-descricao > ol {
-    padding: 15px 190px;
+    padding: 15px 500px;
 
 }
 
@@ -150,3 +152,12 @@ div td button:hover {
     border-bottom-style: solid;
 }
 
+img:hover
+{
+   opacity: 1.0;
+}
+
+img:active
+{
+   opacity: 1.0;
+}
