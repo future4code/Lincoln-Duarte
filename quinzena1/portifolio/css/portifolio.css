@@ -1,0 +1,108 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    margin-bottom: 15px;
+}
+
+body
+{
+    background-color: gray;
+}
+
+dt
+{
+    margin-top: 10px;
+}
+
+p, h1, li, dd, dt
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head a
+{
+    text-decoration: none;
+    color: rgb(168, 127, 127);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 10px;
+    float: right;
+}
+
+.head
+{
+    background-color:  rgb(53, 1, 1); 
+    overflow: hidden;
+    padding: 19px;
+    
+    
+}
+
+.mid img
+{
+    width: 150px;
+    margin-top: 115px;
+    margin-bottom: 30px;
+}
+
+.mid
+{
+    text-align-last: center;
+}
+
+#texto
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+
+.instituicoes > ul > li
+{
+    margin-bottom: 10px;
+}
+
+.instituicoes
+{
+    margin-bottom: 30px;
+}
+
+.projetos > a > img
+{
+    width: 500px;
+}
+
+.projetos
+{
+    margin-bottom: 30px;
+}
+
+.footer
+{
+    background-color: rgb(53, 1, 1);
+}
+
+#contato, label, input
+{
+    color: rgb(168, 127, 127);
+}
+
+.footer > img
+{
+    width: 50px;
+}
+
+.footer > p
+{
+    color: rgb(168, 127, 127);
+}
+
+.footer > a
+{
+    text-decoration: none;
+    color: rgb(168, 127, 127);
+    margin-right: 10px;
+}
