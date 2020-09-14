@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+/*cabeçalho*/
+header{
+    background-color: #3B4F66;
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr;
+    height: 100px;
+    width: 100%;
+}
+
+header div{
+    height: 100px;
+    display: flex;
+    color: rgb(221, 221, 221);
+    margin-left: 20px;
+}
+
+header img{
+    height: 100px;
+    width: auto;
+}
+
+header a{
+    float: right;
+    margin: 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+ul{
+    list-style-type: none;
+}
+
+h2{
+    margin: 25px 0;
+}
+
+#search button img{
+    width: 25px;
+    height: 25px;
+}
+
+input{
+    margin: 35px 0;
+    width: 100%;
+}
+
+button{
+    margin: 35px 0;
+}
+
+/*article*/
+article > img{
+    width: 100vw;
+}
+
+article{
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.center{
+    border: 2px solid #3B4F66;
+    padding: 70px;
+}
+
+article a{
+    text-decoration: none;
+    color: #7AA66B;
+}
+
+#text{
+    color: #7AA66B;
+    text-align: center;
+}
+/*footer*/
+footer{
+    width: 100%;
+    bottom: 0;
+    background-color:#3B4F66;
+    color: white;
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr;
+}
+
+footer a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+footer > div > p{
+    margin: 15px 0;
+    
+}
+
+footer button{
+    background-color: #7AA66B;
+    width: 200px;
+    height: 50px;
+}
+
+footer button:hover{
+    background-color: #7aa66b7c;
+}
+
+footer div{
+    margin: 0 10px;
+}
+
+.rede{
+    width: 50px;
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 375px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    /*cabeçalho*/
+    header{
+        background-color: #3B4F66;
+        display: grid;
+        grid-template: 1fr/ 1fr 1fr 1fr;
+        height: 170px;
+        width: 100%;
+    }
+    
+    #search{
+        height: 100px;
+        display: flex;
+        color: rgb(221, 221, 221);
+        margin-left: 20px;
+    }
+
+    header div{
+        height: 100px;
+        display: grid;
+        color: rgb(221, 221, 221);
+        margin-left: 20px;
+    }
+    
+    header img{
+        height: 60px;
+        width: auto;
+    }
+    
+    header a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    
+    ul{
+        list-style-type: none;
+    }
+    
+    h2{
+        margin: 25px 0;
+        width: 30px;
+    }
+    
+    #search button img{
+        width: 25px;
+        height: 25px;
+    }
+    
+    input{
+        margin: 35px 0;
+        width: 50%;
+    }
+    
+    button{
+        margin: 35px 0;
+    }
+    
+    /*article*/
+    article{
+        width: 50%;
+    }
+    
+    article{
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr/ 1fr;
+        height: 100vh;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 90px;
+    }
+    
+    .center{
+        border: 2px solid #3B4F66;
+        padding: 70px;
+    }
+    
+    article a{
+        text-decoration: none;
+        color: #7AA66B;
+    }
+    
+    #text{
+        color: #7AA66B;
+        text-align: center;
+        width: 50%;
+    }
+    /*footer*/
+    footer{
+        width: 100%;
+        bottom: 0;
+        background-color:#3B4F66;
+        color: white;
+        display: grid;
+        grid-template: 1fr 1fr 1fr/ 1fr;
+    }
+    
+    footer a{
+        margin: 0 15px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    footer > div > p{
+        margin: 15px 0;
+        
+    }
+    
+    footer button{
+        background-color: #7AA66B;
+        width: 200px;
+        height: 50px;
+    }
+    
+    footer button:hover{
+        background-color: #7aa66b7c;
+    }
+    
+    footer div{
+        margin: 0 10px;
+    }
+
+}
+/*#3B4F66*/
+/*#7AA66B*/
+/*375 x 667*/
