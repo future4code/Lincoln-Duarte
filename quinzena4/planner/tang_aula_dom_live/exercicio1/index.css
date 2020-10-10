@@ -1,0 +1,8 @@
+.texto-azul {
+  color: blue;
+}
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
+}
