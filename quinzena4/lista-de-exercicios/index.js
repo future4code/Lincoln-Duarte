@@ -4,7 +4,7 @@
     3. Quantidade total de números 14 / 6 / 8
     4. -10 / 1590
 
-    Exercícios de Lógica de Programação
+//  Exercícios de Lógica de Programação
     1.  
     for(numero of numeros){
 
@@ -89,6 +89,7 @@ for(let i = menor; i < maior; i++){
 
 console.log("A diferença entre eles é", contador);
 */
+/*
 //  Exercícios de Funções
 function verificamaioremenor(array ,maior, menor, i){
     if(i > array.length){
@@ -115,3 +116,48 @@ const print = () => {
     alert("Hello Future4")
 }
 print()
+*/
+/*
+//  Exercícios de objetos
+//  1. Arrays são gavetas as quais podemos guardar várias coisas nela
+//     Objetos são divisorias que guardam por tipo de uso
+//     Podemos usa-los em momentos onde temos que armazenar dados de um usuario
+
+function criaRetangulo(lado1, lado2){
+    const objeto = {
+        largura: lado1,
+        altura: lado2,
+        perímetro: 2 * (lado1 + lado2),
+        area: lado1 * lado2
+    }
+    return objeto
+}
+console.log(criaRetangulo(Number(prompt("Primeiro lado")), Number(prompt("segundo lado"))))
+
+const filmefavorito = {
+    titulo: prompt("Qual o titulo do filme mais incrivel do mundo?"),
+    ano: prompt("Em que ano passou nas telas de cinema?"),
+    diretor: prompt("Quem dirigiu?"),
+    ator1: prompt("Qual ator foi marcante?"),
+    ator2: prompt("Qual o ator marcou tambem?"),
+}
+alert("Venha assistir ao filme " + filmefavorito.titulo + ", de " + filmefavorito.ano + 
+", dirigido por " + filmefavorito.diretor + " e estrelado por " + filmefavorito.ator1 + ", " + filmefavorito.ator2)
+
+let theone = {
+    nome: prompt("Qual o nome da pessoa?"),
+    idade: prompt("Qual a idade?"),
+    email: prompt("Qual o email?"),
+    endereco: prompt("Qual o endereço dela?")
+}
+
+function anonimizarPessoa(pessoa){
+    return pessoa = {
+        ...pessoa,
+        nome: "ANÔNIMO"
+    }
+}
+
+theone = anonimizarPessoa(theone)
+console.log(theone)
+*/
