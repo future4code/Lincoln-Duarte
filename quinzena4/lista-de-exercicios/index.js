@@ -89,4 +89,29 @@ for(let i = menor; i < maior; i++){
 
 console.log("A diferença entre eles é", contador);
 */
+//  Exercícios de Funções
+function verificamaioremenor(array ,maior, menor, i){
+    if(i > array.length){
+        console.log("dfsd", maior)
+        console.log("dfsd", menor)
+        return 0
+    }
+    if(maior < array[i + 1]){
+        maior = array[i + 1]
+    }
+    if(menor > array[i + 1]){
+        menor = array[i + 1]
+    }
+    verificamaioremenor(array, maior, menor, i + 1)
+}
 
+const array = [-10,2,3,4,5,10,6,5465,7,8,9]
+let maior = array[0]
+let menor = array[0]
+
+verificamaioremenor(array, maior, menor, 0)
+
+const print = () => {
+    alert("Hello Future4")
+}
+print()
