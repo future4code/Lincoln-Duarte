@@ -91,26 +91,38 @@ console.log("A diferença entre eles é", contador);
 */
 /*
 //  Exercícios de Funções
-function verificamaioremenor(array ,maior, menor, i){
-    if(i > array.length){
-        console.log("dfsd", maior)
-        console.log("dfsd", menor)
+function verificamaioremenor(array ,maior, menor, i, segundomaior, segundomaior){
+    if(i >= array.length){
+        segundomenor = maior
+        for(let cont = 0; cont < array.length; cont++){
+            if(segundomaior < array[cont] && array[cont] !== maior){
+                segundomaior = array[cont]
+            }
+            if(segundomenor > array[cont] && array[cont] !== menor){
+                segundomenor = array[cont]
+            }
+        }
+        
+        console.log(segundomaior)
+        console.log(segundomenor)
         return 0
     }
-    if(maior < array[i + 1]){
-        maior = array[i + 1]
+    if(maior < array[i]){
+        maior = array[i]
     }
-    if(menor > array[i + 1]){
-        menor = array[i + 1]
+    if(menor > array[i]){
+        menor = array[i]
     }
-    verificamaioremenor(array, maior, menor, i + 1)
+    verificamaioremenor(array, maior, menor, i + 1, segundomaior, segundomaior)
 }
 
 const array = [-10,2,3,4,5,10,6,5465,7,8,9]
-let maior = array[0]
-let menor = array[0]
+let maior = 0
+let menor = 0
+let segundomaior = 0
+let segundomenor = 0
 
-verificamaioremenor(array, maior, menor, 0)
+verificamaioremenor(array, maior, menor, 0, segundomaior, segundomaior)
 
 const print = () => {
     alert("Hello Future4")
@@ -160,4 +172,172 @@ function anonimizarPessoa(pessoa){
 
 theone = anonimizarPessoa(theone)
 console.log(theone)
+
+// Funçôes de array
+const array = [
+    { nome: "Pedro", idade: 20 },
+    { nome: "João", idade: 10 },
+    { nome: "Paula", idade: 12 },
+    { nome: "Artur", idade: 89 }
+]
+
+const veio = (array) => {
+    if(array.idade >= 20){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+const novo = (array) => {
+    if(array.idade < 20){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+console.log(array.filter(veio))
+console.log(array.filter(novo))
+
+const array = [1, 2, 3, 4, 5, 6]
+
+const multiplica = (array) => {
+    return array * 2
+}
+
+console.log(array.map(multiplica))
+
+const multiplicaString = (array) => {
+    return String(array * 3)
+}
+
+console.log(array.map(multiplicaString))
+
+const arraydeString = (array) =>{
+    if(array % 2 === 0){
+        return array + " é par"
+    }
+    else{
+        return array + " é impar"
+    }
+}
+
+console.log(array.map(arraydeString))
+
+const pessoas = [
+	{ nome: "Paula", idade: 12, altura: 1.8},
+	{ nome: "João", idade: 20, altura: 1.3},
+	{ nome: "Pedro", idade: 15, altura: 1.9},
+	{ nome: "Luciano", idade: 22, altura: 1.8},
+	{ nome: "Artur", idade: 10, altura: 1.2},
+	{ nome: "Soter", idade: 70, altura: 1.9}
+]
+
+const permissao = (array) =>{
+    if(array.altura >= 1.5){
+        if(array.idade > 14 && array.idade < 60){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+    else{
+        return false
+    }
+}
+
+console.log(pessoas.filter(permissao))
+
+const permissaoNegada = (array) =>{
+    if(array.altura >= 1.5){
+        if(array.idade > 14 && array.idade < 60){
+            return false
+        }
+        else{
+            return true
+        }
+    }
+    else{
+        return true
+    }
+}
+
+console.log(pessoas.filter(permissaoNegada))
+
+const consultas = [
+	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+]
+
+const consultaMarcada = (array) => {
+    if(array.genero === "masculino"){
+        console.log("Olá, Sr." + array.nome + ". Estamos enviando esta mensagem para lembrá-lo da sua consulta no dia "
+        + array.dataDaConsulta + ". Por favor, acuseo recebimento deste e-mail.")
+    }
+    else{
+        console.log("Olá, Sra." + array.nome + ". Estamos enviando esta mensagem para lembrá-la da sua consulta no dia "
+        + array.dataDaConsulta + ". Por favor, acuseo recebimento deste e-mail.")
+    }
+}
+const verificaConsulta = (array) => {
+    if(array.cancelada === true){
+        return false
+    }
+    else{
+        return true
+    }
+}
+
+const consultaCancelada = (array) => {
+    if(array.genero === "masculino"){
+        console.log("Olá, Sr." + array.nome + ". Infelizmente, sua consulta marcada para o dia "
+        + array.dataDaConsulta + " foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la")
+    }
+    else{
+        console.log("Olá, Sra." + array.nome + ". Infelizmente, sua consulta marcada para o dia "
+        + array.dataDaConsulta + " foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la")
+    }
+}
+const verificaCancelada = (array) => {
+    if(array.cancelada === true){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+const consultasmarcadas = consultas.filter(verificaConsulta)
+const consultascanceladas = consultas.filter(verificaCancelada)
+console.log(consultasmarcadas.forEach(consultaMarcada))
+console.log(consultascanceladas.forEach(consultaCancelada))
+
+const contas = [
+	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+	{ cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+	{ cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+	{ cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
+]
+
+function extrato(array, i){
+    
+    if(i >= array.length){
+        console.log(array)
+        return 0
+    }
+    for(let cont = 0; cont < array[i].compras.length; cont++){
+        array[i].saldoTotal -= array[i].compras[cont]
+    }
+    extrato(array, i + 1)
+}
+
+extrato(contas, 0)
 */
