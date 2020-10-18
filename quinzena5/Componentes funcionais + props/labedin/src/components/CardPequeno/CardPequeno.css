@@ -1,0 +1,19 @@
+.little-container{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 15px 30px;
+    margin: 10px auto;
+}
+
+.little-container > img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.little-container > span{
+    margin-right: 10px;
+}
+.little-container > strong{
+    margin-right: 10px;
+}
